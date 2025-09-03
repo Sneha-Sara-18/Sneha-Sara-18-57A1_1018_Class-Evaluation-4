@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Form Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="#">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <p class="helper-text">Your password is between 4 and 12 characters</p>
+            </div>
+
+            <div class="form-group">
+                <label for="input-error">Input Text Label</label>
+                <div class="input-wrapper">
+                    <input type="text" id="input-error" placeholder="Enter text">
+                </div>
+            </div>
+
+            <div class="form-group inline-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" class="checkbox">
+                    <span class="custom-checkbox"></span>
+                    Remember me
+                </label>
+            </div>
+
+            <div class="form-group inline-group">
+                <label class="switch-label">
+                    Off
+                    <div class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="radio-label">
+                    <input type="radio" name="radio-selection">
+                    <span class="custom-radio"></span>
+                    Radio selection 1
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="radio-selection" checked>
+                    <span class="custom-radio"></span>
+                    Radio selection 2
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="radio-selection">
+                    <span class="custom-radio"></span>
+                    Radio selection 3
+                </label>
+            </div>
+            
+
+            <div class="form-group">
+                 <label for="dropdown">Dropdown Title</label>
+                 <div class="select-wrapper">
+                    <select id="dropdown">
+                        <option selected>Dropdown option</option>
+                        <option>Dropdown option 1</option>
+                        <option>Dropdown option 2</option>
+                    </select>
+                 </div>
+            </div>
+
+            <div class="button-group">
+                <button type="button" class="btn btn-cancel">Cancel</button>
+                <button type="submit" class="btn btn-next">Next</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+
